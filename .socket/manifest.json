@@ -1,0 +1,27 @@
+{
+  "patches": {
+    "pkg:npm/semver@5.4.1": {
+      "uuid": "06bb9439-4e64-4794-8804-cf7d915be438",
+      "exportedAt": "Tue, 03 Mar 2026 23:57:58 GMT",
+      "files": {
+        "package/semver.js": {
+          "beforeHash": "0001ef8ff411650157c1b52da7d4524fa2f191164ffd5ab7e3aebec31eb1db5a",
+          "afterHash": "7774b7cbe7cadb92eadefe4906e110fe0fcaa94dd938e8d56a55987518bf21b0"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-c2qf-rxjj-qqgw": {
+          "cves": [
+            "CVE-2022-25883"
+          ],
+          "summary": "semver vulnerable to Regular Expression Denial of Service",
+          "severity": "HIGH",
+          "description": "Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range."
+        }
+      },
+      "description": "",
+      "license": "MIT",
+      "tier": "free"
+    }
+  }
+}
